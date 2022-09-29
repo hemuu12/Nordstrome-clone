@@ -1,9 +1,9 @@
 import './App.css';
 
-import Navbar from "./components/Navbar/navbar"
-import Footers from "./components/footer/footer"
-  
-
+// import Navbar from "./components/Navbar/navbar"
+// import Footers from "./components/footer/footer"
+//   import Login from "./components/login/login"
+  import Signup from "./components/login/signup"
 
 function App() {
   
@@ -15,8 +15,10 @@ function App() {
   
     return (
       <div className="App" style={style}>
-         <Navbar  />
-         <Footers />
+         {/* <Navbar  /> */}
+         {/* <Login /> */}
+         <Signup/>
+         {/* <Footers /> */}
       </div>
     );
 }

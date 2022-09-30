@@ -1,10 +1,9 @@
 import './App.css';
-
 // import Navbar from "./components/Navbar/navbar"
 // import Footers from "./components/footer/footer"
 //   import Login from "./components/login/login"
-  import Signup from "./components/login/signup"
-
+  // import Signup from "./components/login/signup"
+import Data from "./components/data/mensdata"
 function App() {
   
   const style={
@@ -17,8 +16,10 @@ function App() {
       <div className="App" style={style}>
          {/* <Navbar  /> */}
          {/* <Login /> */}
-         <Signup/>
+         {/* <Signup/> */}
          {/* <Footers /> */}
+         <Data/>
+        
       </div>
     );
 }

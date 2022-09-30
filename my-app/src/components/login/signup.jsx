@@ -10,9 +10,7 @@ export default function Signup(){
 const [input, setInput] = useState('')
 
 const handleInputChange = (e) => setInput(e.target.value)
-  
-const isError = input === ''
-
+    
 const style={
 
 display:"flex",

@@ -1,9 +1,8 @@
 import './App.css';
-// import Navbar from "./components/Navbar/navbar"
-// import Footers from "./components/footer/footer"
-//   import Login from "./components/login/login"
-  // import Signup from "./components/login/signup"
-import Data from "./components/data/mensdata"
+import Navbar from "./components/Navbar/navbar"
+import Footers from "./components/footer/footer"
+import Allroute from "./components/allrouter"
+import Home from "./components/homepage/homepage"
 function App() {
   
   const style={
@@ -14,11 +13,10 @@ function App() {
   
     return (
       <div className="App" style={style}>
-         {/* <Navbar  /> */}
-         {/* <Login /> */}
-         {/* <Signup/> */}
-         {/* <Footers /> */}
-         <Data/>
+         <Navbar  />
+        {/* <Allroute/> */}<Home/>
+         <Footers />
+         
         
       </div>
     );

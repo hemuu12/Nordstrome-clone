@@ -17,7 +17,7 @@ return (
 </div>
 <h1 style={{marginTop:"20px",fontSize:"15px"  }} > {name}</h1>
 <p style={{marginTop:"10px",fontSize:"18px",fontWeight:"400",width:"60%"}}>{des}</p>
-<p style={{marginTop:"10px", fontSize:"17px",fontWeight:"500"}}>INR {price}</p>
+<p style={{marginTop:"10px", fontSize:"18px",fontWeight:"500"}}>INR {price}</p>
 </div>
 
 

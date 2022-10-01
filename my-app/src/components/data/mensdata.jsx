@@ -68,7 +68,7 @@ fetchsecond()
         <h1 style={{marginTop:"20px",fontSize:"18px",fontWeight:"200",textAlign:"left",paddingLeft:"20px"}}>All Business Casual Apparel for Men</h1>
 
        
-        <div style={{display:"grid",gap:"20px",gridTemplateColumns:"repeat(3,1fr)",gridTemplateRows:"1fr 1fr 1fr"}}>
+        <div style={{display:"grid",margin:"auto",gap:"20px",gridTemplateColumns:"repeat(3,1fr)",gridTemplateRows:"1fr 1fr 1fr"}}>
         {
             data.map((el)=>(
                 <Struture  key={el.id}

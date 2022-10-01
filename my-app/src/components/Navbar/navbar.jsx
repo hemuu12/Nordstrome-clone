@@ -25,8 +25,8 @@ let arr=["Sale",
 
 const style={
     display:"flex",
-    border:"1px solid black",
-    width:'95%',
+    borderStyleBottom:"1px solid black",
+    width:'100%',
     height:"120px",
     alignItems:"center",
     paddingLeft:"30px"

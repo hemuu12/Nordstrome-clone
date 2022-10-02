@@ -67,7 +67,7 @@ return(
 <>
 
 
-<div style={{border:"1px solid black", paddingTop:"30px",paddingBottom:"20px",marginTop:"30px",background:"whitegrey"}}>
+<div style={{backgroundColor:"lightgrey",border:"1px solid black", paddingTop:"30px",paddingBottom:"20px",marginTop:"30px",background:"whitegrey"}}>
 <div style={{display:"flex" ,gap:"60px"}}>
 {
         arr.map((el)=>{

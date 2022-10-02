@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar/navbar"
 import Footers from "./components/footer/footer"
 import Allroute from "./components/allrouter"
-import Home from "./components/homepage/homepage"
+
 function App() {
   
   const style={
@@ -14,7 +14,7 @@ function App() {
     return (
       <div className="App" style={style}>
          <Navbar  />
-        {/* <Allroute/> */}<Home/>
+        <Allroute/>
          <Footers />
          
         

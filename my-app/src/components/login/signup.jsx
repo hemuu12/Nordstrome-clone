@@ -2,14 +2,16 @@ import {Box,Button,Input,  FormControl,
     FormLabel,
     Checkbox
     }  from "@chakra-ui/react"
-
+import {Link} from "react-router-dom"
 import {useState} from "react"
 
 export default function Signup(){
 
 const [input, setInput] = useState('')
+const [input1, setInput1] = useState('')
+const [input2, setInput2] = useState('')
 
-const handleInputChange = (e) => setInput(e.target.value)
+
     
 const style={
 
@@ -46,24 +48,24 @@ const inputt={
                     <Input style={inputt}
                         type='Text'
                         value={input}
-                        onChange={handleInputChange}
+                        onChange={(e)=> setInput(e.target.value)}
                     />
         
                     <FormLabel mt="15px">Last Name</FormLabel>
                     <Input style={inputt}
                         type='Text'
-                        value={input}
-                        onChange={handleInputChange}
+                        value={input1}
+                        onChange={(e)=> setInput1(e.target.value)}
                     />       
                     <FormLabel mt="15px">Create password</FormLabel>
                     <Input style={inputt}
                         type='password'
-                        value={input}
-                        onChange={handleInputChange}
+                        value={input2}
+                        onChange={(e)=> setInput2(e.target.value)}
                     />       
                     <div style={{alignItems:"center" ,marginTop:"20px" }}><Checkbox  isInvalid>Keep me signed in.</Checkbox></div>
                     <p style={{marginTop:"20px",fontSize:"12px",width:"50%"}}>By tapping Next, you agree to our <span style={{ textDecoration:"underline"}}   > Privacy Policy</span> and <span style={{ textDecoration:"underline"}} >Terms & Conditions</span>.</p>
-                    <Button  w="350px" bg="black" color="white" mt="20px" borderRadius="none">Create Account</Button>
+                    <Button  w="300px" bg="black" color="white" mt="20px" borderRadius="none"><Link to="/">Create Account</Link></Button>
                     </FormControl>
             </Box>
 

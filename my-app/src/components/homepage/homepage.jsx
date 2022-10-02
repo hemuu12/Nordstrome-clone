@@ -1,5 +1,9 @@
 import Slideshow from "./slideshow"
 import {Link} from "react-router-dom"
+import {Fetchwomen} from "../data/fetch"
+import Struture from "../data/structure"
+  import {useState,useEffect} from "react" 
+import Slideshow2 from "./slideshow2"
 
 export default function Home(){
     const slideImages = [
@@ -7,6 +11,20 @@ export default function Home(){
           url: "https://n.nordstrommedia.com/id/44648fdb-be56-4600-addb-6d3c7ba21f2c.jpeg?h=200&w=1608",
         }, 
     ]  
+
+    let [data,setData] =useState([])
+   
+    
+    function fetchsecond(){
+        Fetchwomen().then((res)=>setData(res.data))
+        .catch((error)=>console.log(error))
+        .finally(()=>console.log("promise Complete"))
+    }
+    useEffect(()=>{
+    fetchsecond()
+    },[])
+    
+
 
 return (
 <>
@@ -32,8 +50,22 @@ return (
   <p style={{fontSize:"17px",fontWeight:"450",marginTop:"10px"}}>Items similar to what you've browsed are on sale</p>
 </div>
 
-</>
+<div style={{display:"flex",margin:"auto",gap:"10px",marginTop:"40px" ,paddingLeft:"10px",paddingRight:"10px",textAlign:"center"}}>
+        {
+            data.map((el)=>(
+                <Struture  key={el.id}
+                   img= {el.image}
+                  des={el.title}
+                  name={el.category}
+                  price={el.price}
+                /> 
 
+            ))
+        }
+</div>
+
+<Slideshow2/>
+</>
 
 
 )

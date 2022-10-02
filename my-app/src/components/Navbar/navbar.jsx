@@ -103,7 +103,7 @@ return (
 </Menu>
 <Link style={link} to="./dataStore"><img width="30px" alt="" src="https://img.icons8.com/ios/50/000000/new-store.png"/>Stores</Link>
 <Link style={link} to="./dataStore"><img width="30px" alt=""  src="https://img.icons8.com/pastel-glyph/64/000000/purchase-order.png"/>Purchases</Link>
-<Link style={link} to="/cart"><img width="30px" alt="" src="https://img.icons8.com/material-outlined/24/000000/shopping-bag--v1.png"/></Link>
+<Link style={link} to="/dataStore"><img width="30px" alt="" src="https://img.icons8.com/material-outlined/24/000000/shopping-bag--v1.png"/></Link>
 </div>
 
 <div style={bottomnav}>
